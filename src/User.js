@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import "./styles.css";
 
 const Name = styled.input`
   font-family: Arial;
-  color: black;
+  color: #e95453;
   font-size: 20px;
   text-align: center;
-  margin-top: 3em;
   padding: 10px;
   border: 3px white dashed;
   width: 260px;
@@ -14,10 +14,10 @@ const Name = styled.input`
   position: relative;
   top: 10px;
   left: 40px;
-  background-color: #d0f0d0;
+  background-color: #f0edce;
 
   :hover {
-    background-color: #fff1f3;
+    background-color: #f9ebc3;
   }
 `;
 const Image = styled.img`
@@ -26,12 +26,12 @@ const Image = styled.img`
   margin: 10px;
   float: left;
   position: relative;
-  top: 150px;
+  top: 75px;
   left: -225px;
-  background-color: #d0f0d0;
+  background-color: #f0edce;
 
   :hover {
-    background-color: #fff1f3;
+    background-color: #f9ebc3;
   }
 `;
 
@@ -51,7 +51,7 @@ function User() {
   }, []);
 
   return (
-    <div>
+    <div className="User">
       <h3>
         <Name type="text" onChange={handleNameChange} value={name} />
       </h3>
